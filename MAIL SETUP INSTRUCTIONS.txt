@@ -1,0 +1,35 @@
+mail setup instruction
+
+STEP 1: 
+
+go G:\xampp\php\php.ini(G = your xampp installation foldar)
+
+open php.ini file
+search mail function (ctrl+f)
+
+SMTP=smtp.gmail.com
+smtp_port=587
+sendmail_from = yourmail@gmail.com (give your email)
+sendmail_path = "\"G:\xampp\sendmail\sendmail.exe\" -t"  (G = your xampp installation foldar)
+
+
+STEP 2:
+
+go G:\xampp\sendmail\sendmail.ini (G = your xampp installation foldar)
+
+open sendmail.ini
+
+smtp_server=smtp.gmail.com
+smtp_port=587
+default_domain=smtp.gmail.com
+error_logfile=error.log
+debug_logfile=debug.log
+auth_username=yourmail@gmail.com (give your email)
+auth_password=YOURPASSWORD (your email password)
+force_sender=yourmail@gmail.com (give your email)
+
+
+now run xampp
+
+
+
